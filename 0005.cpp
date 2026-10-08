@@ -1,13 +1,12 @@
-#include <iostream>
-#include <cmath>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-    double w, l;
+    double a, b;
+    cin >> a >> b;
 
-    cin >> w >> l;
-
-    int answer_before = w*w + l*l;
-    int answer_last = pow(answer_before, 0.5);
+    double c = sqrt(a * a + b * b);
+    cout << fixed << setprecision(6) << c;
+    
     return 0;
 }
